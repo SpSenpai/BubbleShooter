@@ -1,0 +1,97 @@
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    user-select: none;
+    background-color: black;
+}
+
+
+.scoreboard {
+    position: fixed;
+    color: white;
+    padding-left: 5px;
+    padding-top: 5px;
+    user-select: none;
+    font-size: 1rem;
+}
+
+.bgui{
+  position: absolute;
+  width: 24vw;
+  height: 30vh;
+  padding: 1vh;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  text-align: center;
+}
+
+.bgui h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.bgui p{
+    margin: 2vh;
+}
+
+.bgui button{
+    background-color: rgb(17, 92, 255);
+    color: white;
+    border: none;
+    height: 5vh;
+    width: 20vw;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#difficulty{
+    margin-top: 2vh;
+}
+.bgui button:hover{
+    background-color: rgb(84, 136, 250);
+}
+
+@media only screen and (max-width : 1000px){
+    .bgui{
+        width: 30vw;
+        height: 17vh;
+        padding: 5px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .bgui h1{
+        font-size: 4vh;
+        font-weight: bold;
+    }
+    
+    .bgui p{
+        margin: 1vh;
+    }
+    
+    .bgui button{
+        height: 3vh;
+        width: 180px;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width : 700px){
+    .bgui{
+        width: 50vw;
+        height: 17vh;
+    }
+}
+@media only screen and (max-width : 300px){
+    .bgui{
+        width: 80vw;
+        height: 19vh;
+    }
+}
+
+
