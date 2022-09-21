@@ -1,97 +1,94 @@
 
+
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
     user-select: none;
     background-color: black;
 }
 
 
+
 .scoreboard {
     position: fixed;
-    color: white;
+    user-select: none;
     padding-left: 5px;
     padding-top: 5px;
-    user-select: none;
-    font-size: 1rem;
+    
+}
+#scoretitle{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: white;
 }
 
-.bgui{
-  position: absolute;
-  width: 24vw;
-  height: 30vh;
-  padding: 1vh;
-  z-index: 999;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  text-align: center;
+#score{
+    font-size: 1.2rem;
+    padding-top: 5px;
+    font-weight: 200;
 }
 
-.bgui h1{
+#powerTitle,#highScore{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+#highScore{
+    top: 25%;
     font-size: 3rem;
+}
+
+
+
+#bgui{
+    position: absolute;
+    display: none;
+    width: 250px;
+    height: 260px;
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 57, 163);
+    color: white;
+    text-align: center;
+}
+
+#bgui h1{
+    font-size: 4rem;
     font-weight: bold;
     margin: 0;
 }
 
-.bgui p{
+#bgui p{
     margin: 2vh;
 }
 
-.bgui button{
-    background-color: rgb(17, 92, 255);
-    color: white;
+#bgui button{
+    background-color: rgb(255, 255, 255);
     border: none;
-    height: 5vh;
-    width: 20vw;
+    height: 50px;
+    width: 220px;
     border-radius: 15px;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-#difficulty{
-    margin-top: 2vh;
-}
-.bgui button:hover{
-    background-color: rgb(84, 136, 250);
-}
-
-@media only screen and (max-width : 1000px){
-    .bgui{
-        width: 30vw;
-        height: 17vh;
-        padding: 5px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .bgui h1{
-        font-size: 4vh;
-        font-weight: bold;
-    }
-    
-    .bgui p{
-        margin: 1vh;
-    }
-    
-    .bgui button{
-        height: 3vh;
-        width: 180px;
-        border-radius: 8px;
-    }
-}
-
-@media only screen and (max-width : 700px){
-    .bgui{
-        width: 50vw;
-        height: 17vh;
-    }
-}
-@media only screen and (max-width : 300px){
-    .bgui{
-        width: 80vw;
-        height: 19vh;
-    }
+#back{
+    margin-top: 20px;
 }
 
 
+
+#gamepage{
+    display: none;
+}
